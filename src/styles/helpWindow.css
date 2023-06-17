@@ -1,0 +1,9 @@
+.helpWindow {
+   background-image: url(../images/backgroundImage.png);
+   display: flex;
+   width: 96vw;
+   max-width: 1600px;
+   flex-wrap: wrap;
+   min-height: 88vh;
+   justify-content: center;
+}

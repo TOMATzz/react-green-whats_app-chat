@@ -1,0 +1,21 @@
+.header {
+   color: #ffffff;
+   background-color: #00a884;
+   padding-left: 15px;
+   /* min-width: 96vw; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 7vh;
+
+}
+
+.navBarBtn {
+   margin-right: 2%;
+   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19)
+}
+
+.navBarBox_1 {
+   display: flex;
+   margin-right: 2%;
+}

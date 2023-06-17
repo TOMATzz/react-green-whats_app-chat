@@ -1,0 +1,23 @@
+.main {
+   background-image: url(../images/backgroundImage.png);
+   width: 96vw;
+   max-width: 1600px;
+   min-height: 88vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: x-large;
+
+}
+
+.greetings {
+   text-align: center;
+   margin-bottom: 2%;
+
+}
+
+.btnOpenModal {
+   width: 200px;
+margin-bottom: 20px;
+}
