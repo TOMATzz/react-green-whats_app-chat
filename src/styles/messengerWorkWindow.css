@@ -9,6 +9,7 @@
 .itemsBox {
    display: block;
    width: 30%;
+   height: 88.5vh;
    border-right: 1px solid #d1d7db;
 }
 
@@ -45,7 +46,7 @@
 }
 
 .contactMenu {
-   height: 75.8vh;
+   height: 76.2vh;
    border-inline-end: none;
 }
 
@@ -166,6 +167,7 @@
 .items_box_2 {
    margin-top: 0.1%;
    overflow-y: auto;
+
 }
 
 .icw-box_1 {
@@ -181,7 +183,7 @@
 .message_box_1 {
    display: flex;
    flex-direction: column;
-   height: 82vh;
+   height: 82.5vh;
 }
 
 .mw_box_1 {
