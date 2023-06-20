@@ -28,7 +28,7 @@ const ContactsSelectionMenu = () => {
 
                myWhatsAppContact.map((elem) => {
 
-                  return elem.name !== ''
+                  return elem.name !== '' && elem.name.length > 2
                      ?
                      {
                         label: elem.name, key: elem.id,

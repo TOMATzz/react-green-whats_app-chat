@@ -87,11 +87,9 @@ const ModalAythWelcomeWindow = ({ isModalOpen, setIsModalOpen }) => {
 
          try {
 
-            let responseContactInfo = await getContactInfo(+dataContacts[counter].id.replace(/[^0-9]/g, ''), values)
+            let responseContactInfo = await getContactInfo(dataContacts[counter].id, values)
 
             if (responseContactInfo.status === 200 && responseContactInfo.data.chatId === dataContacts[counter].id) {
-
-               console.log(responseContactInfo)
 
                array = [...array, { avatar: responseContactInfo.data.avatar, ...dataContacts[counter] }];
 
@@ -126,6 +124,8 @@ const ModalAythWelcomeWindow = ({ isModalOpen, setIsModalOpen }) => {
          let response = await getContacts(values);
 
          if (response.status === 200) {
+
+            console.log(response)
 
             dispatch(setUserContact(response.data));
             getMayContactsData(response.data, values)

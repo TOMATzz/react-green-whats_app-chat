@@ -1,8 +1,8 @@
 import axios from 'axios';
-const getContactInfo = async (userPhone, userDataInstance) => {
+const getContactInfo = async (idContact, userDataInstance) => {
 
    let data = JSON.stringify({
-      "chatId": `${userPhone}@c.us`
+      "chatId": idContact
    });
 
    let config = {
