@@ -28,24 +28,29 @@ const ContactsSelectionMenu = () => {
 
                myWhatsAppContact.map((elem) => {
 
-                  return {
-                     label: elem.name, key: elem.id,
-                     icon: elem.avatar
-                        ?
-                        < Avatar
-                           style={{ justifyContent: 'center' }}
-                           size={40}
-                           src={elem.avatar}
-                        />
-                        :
-                        < Avatar
-                           style={{ justifyContent: 'center' }}
-                           size={40}
-                           icon={< UserOutlined />}
-                        />,
+                  return elem.name !== ''
+                     ?
+                     {
+                        label: elem.name, key: elem.id,
+                        icon: elem.avatar
+                           ?
+                           < Avatar
+                              style={{ justifyContent: 'center' }}
+                              size={40}
+                              src={elem.avatar}
+                           />
+                           :
+                           < Avatar
+                              style={{ justifyContent: 'center' }}
+                              size={40}
+                              icon={< UserOutlined />}
+                           />,
 
-                     children: "", type: ""
-                  }
+                        children: "", type: ""
+                     }
+                     :
+                     null
+
 
                })
             }

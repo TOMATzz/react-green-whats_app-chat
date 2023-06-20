@@ -33,7 +33,7 @@
    height: 80vh;
    overflow-y: auto;
    background: linear-gradient(#ffffff99, #ffffff99),
-      url(../images/backgroundImage.png);
+      url(../images/backgroundImage.jpg);
 }
 
 .dateMessage {

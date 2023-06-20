@@ -91,6 +91,8 @@ const ModalAythWelcomeWindow = ({ isModalOpen, setIsModalOpen }) => {
 
             if (responseContactInfo.status === 200 && responseContactInfo.data.chatId === dataContacts[counter].id) {
 
+               console.log(responseContactInfo)
+
                array = [...array, { avatar: responseContactInfo.data.avatar, ...dataContacts[counter] }];
 
                mayContactDataArray = [...array, ...dataContacts.slice(counter + 1, dataContacts.length)]
