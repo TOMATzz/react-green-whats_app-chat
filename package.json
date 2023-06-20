@@ -1,7 +1,7 @@
 {
-   "name": "react-green-whats_app-chat",
+   "name": "apigreen-whatsapp-chat",
    "version": "0.1.0",
-   "homepage": "https://TOMATzz.github.io/react-green-whats_app-chat",
+   "homepage": "",
    "private": true,
    "dependencies": {
       "@ant-design/icons": "^5.1.0",
