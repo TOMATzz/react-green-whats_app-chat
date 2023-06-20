@@ -162,7 +162,7 @@ const MessengerWorkWindow = () => {
 
       try {
 
-         let response = await getContactInfo(inputContactPhone.inputValuePhone, userDataInstance);
+         let response = await getContactInfo(`${inputContactPhone.inputValuePhone}@c.us`, userDataInstance);
 
          if (response.status === 200) {
 
