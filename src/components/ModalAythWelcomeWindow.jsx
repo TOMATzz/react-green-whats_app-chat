@@ -90,6 +90,10 @@ const ModalAythWelcomeWindow = ({ isModalOpen, setIsModalOpen }) => {
             let responseContactInfo = await getContactInfo(dataContacts[counter].id, values)
             console.log(responseContactInfo)
 
+            if (responseContactInfo.code) {
+               counter++;
+            }
+
             if (responseContactInfo.status === 200 && responseContactInfo.data.chatId === dataContacts[counter].id) {
 
 
