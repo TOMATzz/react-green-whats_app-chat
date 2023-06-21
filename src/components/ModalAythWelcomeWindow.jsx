@@ -88,7 +88,7 @@ const ModalAythWelcomeWindow = ({ isModalOpen, setIsModalOpen }) => {
          try {
 
             let responseContactInfo = await getContactInfo(dataContacts[counter].id, values)
-            console.log(responseContactInfo)
+
 
             if (responseContactInfo.code) {
                counter++;
