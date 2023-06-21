@@ -88,8 +88,10 @@ const ModalAythWelcomeWindow = ({ isModalOpen, setIsModalOpen }) => {
          try {
 
             let responseContactInfo = await getContactInfo(dataContacts[counter].id, values)
+            console.log(responseContactInfo)
 
             if (responseContactInfo.status === 200 && responseContactInfo.data.chatId === dataContacts[counter].id) {
+
 
                array = [...array, { avatar: responseContactInfo.data.avatar, ...dataContacts[counter] }];
 
