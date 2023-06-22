@@ -5,7 +5,7 @@ import ModalAythWelcomeWindow from '../components/ModalAythWelcomeWindow';
 
 
 const WelcomeWindow = () => {
-  
+
    const [isModalOpen, setIsModalOpen] = useState(false);
 
    const showModal = () => {
@@ -27,7 +27,7 @@ const WelcomeWindow = () => {
                Войти
             </Button>
 
-            <Button type="link" target="_blank" href="https://console.green-api.com/auth"> Войти или зарегистрироваться в Api-Green</Button>
+            <Button type="link" target="_blank" href="https://console.green-api.com/auth"> Войти или зарегистрироваться в Green-Api</Button>
 
             <ModalAythWelcomeWindow isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
 
