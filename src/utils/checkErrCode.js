@@ -26,7 +26,7 @@ const checkErrCode = (error) => {
          break;
       case 'ERR_TEL': connectStatus = { connect: error, text: "Не корректный номер телефона!", color: 'red' }
          break;
-      case 'INVALID_INPUT_DATA': connectStatus = "Не корректный idInstance или apiTokenInstance , проверте введенные данные!";
+      case 'INVALID_INPUT_DATA': connectStatus = "Не корректный idInstance или apiTokenInstance , проверте данные ввода!";
          break;
 
       default:
