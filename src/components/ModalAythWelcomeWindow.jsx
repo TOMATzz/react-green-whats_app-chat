@@ -30,6 +30,13 @@ const ModalAythWelcomeWindow = ({ isModalOpen, setIsModalOpen }) => {
 
    const authApiGreen = async (values) => {
 
+      if (values.idInstance.replace(/\s/g, '').length !== 10 || values.apiTokenInstance.length < 30) {
+
+         setErrorMessage(checkErrCode('INVALID_INPUT_DATA'));
+         setModalWarningText(1)
+         return null;
+      }
+
       modalWarningText && setModalWarningText(0);
 
       setAuthSpin(true);
@@ -37,6 +44,7 @@ const ModalAythWelcomeWindow = ({ isModalOpen, setIsModalOpen }) => {
          let response = await getStateInstance(values);
 
          if (response.status === 200 && response.data.stateInstance === 'authorized') {
+
 
             getMyContacts(values);
             dispatch(setUserInstance(values));
